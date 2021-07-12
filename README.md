@@ -2,6 +2,12 @@
     🍺 benjcunningham/tap
 </h1>
 
+<p align="center">
+  <a href="https://github.com/benjcunningham/homebrew-tap/actions/workflows/tests.yaml">
+    <img alt="tests" src="https://github.com/benjcunningham/homebrew-tap/actions/workflows/tests.yaml/badge.svg">
+  </a>
+</p>
+
 This is my [Homebrew](https://docs.brew.sh/Taps) tap. You probably shouldn’t use
 it, but you’re very welcome to try. Just be careful, since it might not do what
 you expect.
