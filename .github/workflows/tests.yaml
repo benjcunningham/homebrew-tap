@@ -1,0 +1,19 @@
+name: tests
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+  schedule:
+  - cron: 0 0 * * *
+jobs:
+  integration:
+    runs-on: macos-latest
+    steps:
+    - name: Tap
+      run: brew tap benjcunningham/tap
+    - name: Install formulae
+      run: |
+        brew install benjcunningham/tap/taskbook
