@@ -16,5 +16,4 @@ jobs:
       run: brew tap benjcunningham/tap
     - name: Install formulae
       run: |
-        brew install benjcunningham/tap/svg-term-cli
-        brew install benjcunningham/tap/taskbook
+        ls ${PWD}/Formula/* | xargs -I path brew install --formula -s path
