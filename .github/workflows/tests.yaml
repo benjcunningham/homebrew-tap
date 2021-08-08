@@ -16,4 +16,5 @@ jobs:
       run: brew tap benjcunningham/tap
     - name: Install formulae
       run: |
-        ls ${PWD}/Formula/* | xargs -I path brew install --formula -s path
+        set -eo pipefail
+        find Formula -type f | xargs -I path brew install --formula -s path
