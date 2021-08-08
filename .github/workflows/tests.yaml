@@ -16,4 +16,5 @@ jobs:
       run: brew tap benjcunningham/tap
     - name: Install formulae
       run: |
+        brew install benjcunningham/tap/svg-term-cli
         brew install benjcunningham/tap/taskbook
