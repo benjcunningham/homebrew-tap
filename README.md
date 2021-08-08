@@ -23,6 +23,7 @@ brew install <formula>
 
 | Formula | Repository | Description |
 | ---------- | ------- | ----------- |
+| [svg-term-cli](Formula/svg-term-cli.rb) | [marionebl/svg-term-cli](https://github.com/marionebl/svg-term-cli) | Share terminal sessions as razor-sharp animaated SVG everywhere |
 | [taskbook](Formula/taskbook.rb) | [klaussinani/taskbook](https://github.com/klaussinani/taskbook) | Tasks, boards & notes for the command-line habitat |
 
 ## Development

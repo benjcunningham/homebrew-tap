@@ -12,8 +12,8 @@ jobs:
   integration:
     runs-on: macos-latest
     steps:
-    - name: Tap
-      run: brew tap benjcunningham/tap
+    - uses: actions/checkout@v2
     - name: Install formulae
       run: |
-        brew install benjcunningham/tap/taskbook
+        set -eo pipefail
+        find Formula -type f | xargs -I path brew install --formula -s path
