@@ -3,6 +3,9 @@
 </h1>
 
 <p align="center">
+  <a href="https://github.com/benjcunningham/homebrew-tap/actions/workflows/build.yaml">
+    <img alt="tests" src="https://github.com/benjcunningham/homebrew-tap/actions/workflows/build.yaml/badge.svg">
+  </a>
   <a href="https://github.com/benjcunningham/homebrew-tap/actions/workflows/tests.yaml">
     <img alt="tests" src="https://github.com/benjcunningham/homebrew-tap/actions/workflows/tests.yaml/badge.svg">
   </a>
