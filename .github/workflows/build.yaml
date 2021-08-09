@@ -1,0 +1,23 @@
+name: build
+on:
+  schedule:
+  - cron: 0 0 * * *
+jobs:
+  autoupdate:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: brew install zmwangx/npm-noob/noob
+    - name: Auto-update npm packages
+      run: bash .ci/autoupdate.sh
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Auto-update formulae" || true
+    - name: Push changes to remote
+      uses: ad-m/github-push-action@master
+      with:
+        branch: master
+        github_token: ${{ secrets.GITHUB_TOKEN }}
